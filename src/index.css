@@ -1,15 +1,105 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
 body {
-  font-family: Arial;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Card */
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 340px;
   text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Inputs */
 input {
-  display: block;
-  margin: 10px auto;
-  padding: 8px;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
 }
 
+input:focus {
+  border-color: #667eea;
+}
+
+/* Buttons */
 button {
-  padding: 8px 16px;
-  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #667eea;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+/* Disabled button */
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* Logout button override */
+button[style] {
+  background: #e53e3e !important;
+}
+
+button[style]:hover {
+  background: #c53030 !important;
+}
+
+/* Text */
+p {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Links */
+a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
 }
